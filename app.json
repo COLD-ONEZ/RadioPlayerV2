@@ -1,0 +1,61 @@
+{
+  "name": "Motech RadioPlayer",
+  "description": "An Telegram Bot Maded By Safone to Play Nonstop Radio/Music in Telegram Voice Chats",
+  "repository": "https://github.com/DarkAngel1234-tech/RadioPlayerV2",
+  "logo": "https://telegra.ph/file/5544537e87a05e0785147.jpg",
+  "keywords": [
+    "telegram",
+    "radiov2",
+    "voicechat",
+    "music",
+    "radio",
+    "pyrogram",
+    "pytgcalls",
+    "tgcalls",
+    "radioplayer",
+    "MoTech"
+  ],
+  "env": {
+    "API_ID": {
+      "description": "api_id part of your Telegram API Key from @MT_MyTelegramOrg_Bot",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "api_hash part of your Telegram API Key from @MT_MyTelegramOrg_Bot",
+      "required": true
+    },
+    "MT_BOT_ID": {
+      "description": "Bot token of Bot, get from @Botfather",
+      "required": true
+    },
+    "MT_SESSION_NAME": {
+      "description": "Session string, use https://replit.com/@CYBERDUDE3/String-Gen-1 to generate pyrogram session string",
+      "required": true
+    },
+    "CHAT": {
+      "description": "ID of Channel or Group where the Bot plays Radio/Music",
+      "required": true
+    },
+    "LOG_GROUP": {
+      "description": "ID of the group to send playlist if CHAT is a Group, if channel then leave blank",
+      "required": false
+    },
+    "ADMINS": {
+      "description": "ID of Users who can use Admin commands (for multiple users seperated by space)",
+      "required": true
+    },
+    "STREAM_ID": {
+      "description": "URL of Radio station to stream when the bot starts",
+      "value": "https://radioindia.net/radio/hungamanow/icecast.audio",
+      "required": false
+}
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/Mo-Tech-MRK-YT/HeroKu.Support"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
